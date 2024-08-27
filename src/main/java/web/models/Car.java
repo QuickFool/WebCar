@@ -6,13 +6,9 @@ public class Car {
 
     private String series;
 
-    private int price;
+    private String price;
 
-    public Car(String models) {
-        this.models = models;
-    }
-
-    public Car(String models, String series, int price) {
+    public Car(String models, String series, String price) {
         this.models = models;
         this.series = series;
         this.price = price;
@@ -24,6 +20,22 @@ public class Car {
 
     public void setModels(String models) {
         this.models = models;
+    }
+
+    public String getSeries() {
+        return series;
+    }
+
+    public void setSeries(String series) {
+        this.series = series;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     @Override
